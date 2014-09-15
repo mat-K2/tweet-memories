@@ -30,6 +30,7 @@ group :doc do
 end
 
 gem 'haml-rails'
+gem 'yahoo-japanese-analysis'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

@@ -1,1 +1,4 @@
 %h1 memories
+= form_tag import_memories_path, multipart: true do
+  = file_field_tag :csv
+  = submit_tag

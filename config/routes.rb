@@ -1,6 +1,8 @@
 TweetMemories::Application.routes.draw do
 
-  resources :memories, :only => %w(index)
+  resources :memories, :only => %w(index) do
+    post 'import', on: :collection
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

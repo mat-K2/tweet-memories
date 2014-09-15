@@ -1,0 +1,11 @@
+%table{border: "1"}
+  - tweets.each do |month, tweets|
+    %tr
+      %th{style: "border-bottom: 1px solid grey;"}
+        = month
+      %td{style: "font-size: #{tweets.values[0]/30}em; border-bottom: 1px solid grey;"}
+        = tweets.keys[0]
+      %td{style: "font-size: #{tweets.values[1]/30}em; border-bottom: 1px solid grey;"}
+        = tweets.keys[1]
+      %td{style: "font-size: #{tweets.values[2]/30}em; border-bottom: 1px solid grey;"}
+        = tweets.keys[2]
